@@ -1,4 +1,5 @@
 @import "../library.blocks/breakpoints";
+@import "./fonts";
 
 .card {
     border-radius: 1rem;
@@ -35,33 +36,79 @@
 
     &__txt-col {
         box-sizing: border-box;
-        padding: 3rem;
+        padding: 3.5rem 3.5rem 3.5rem 3.3rem;
+    }
+
+    &__headline {
+        @include font(1.64rem, $bold-weight);
+        line-height: 1.45;
+        margin: 0 0 1.3rem;
+    }
+
+    &__copy {
+        @include font(1.2rem, $medium-weight);
+        letter-spacing: 0.057rem;
+        line-height: 1.65;
+        margin: 0 0 3.2rem;
     }
 
     &__author-row {
+        align-items: center;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
+        margin-top: 0;
+    }
+
+    &__author-avatar-wrapper {
+        align-items: center;
+        border-radius: 50%;
+        display: flex;
+        height: 4rem;
+        justify-content: center;
+        margin-right: -4.4rem;
+        overflow: hidden;
+        width: 4rem;
     }
 
     &__author-avatar {
         display: block;
-        width: 4rem;
+        height: auto;
+        width: 100%;
     }
 
     &__author-col {
-        align-items: center;
         display: flex;
         flex-direction: column;
+        justify-content: start;
     }
 
-    &__author-name {}
+    &__author-name {
+        @include font(1.25rem, $bold-weight);
+        letter-spacing: 0.03rem;
+        margin-bottom: 0.02rem;
+    }
 
-    &__date {}
+    &__date {
+        @include font(1.25rem, $medium-weight);
+        letter-spacing: 0.03rem;
+    }
+
+    &__share-wrapper {
+        align-items: center;
+        background-color: #ccc;
+        border-radius: 50%;
+        display: flex;
+        height: 3rem;
+        justify-content: center;
+        overflow: hidden;
+        width: 3rem;
+    }
 
     &__share {
         display: block;
-        width: 4rem;
+        height: auto;
+        width: 1.35rem;
     }
 
 }

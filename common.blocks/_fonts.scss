@@ -1,0 +1,11 @@
+$font-stack: 'Manrope', sans-serif;
+$medium-weight: 500;
+$bold-weight: 700;
+
+@mixin font($size, $weight) {
+    font: {
+        family: $font-stack;
+        size: $size;
+        weight: $weight;
+    }
+}
