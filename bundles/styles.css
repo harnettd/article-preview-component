@@ -15,7 +15,62 @@ html {
     text-align: center;
 }
 
-
+/* These breakpoints match with those of Bootstrap.*/
+.card {
+  border-radius: 1rem;
+  box-sizing: border-box;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.5;
+  overflow: hidden;
+  width: 33rem;
+}
+@media screen and (min-width: 992px) {
+  .card {
+    flex-direction: row;
+    width: 73rem;
+  }
+}
+.card__img-wrapper {
+  box-sizing: border-box;
+  height: 20rem;
+  overflow: hidden;
+  width: 33rem;
+}
+@media screen and (min-width: 992px) {
+  .card__img-wrapper {
+    height: 28rem;
+    width: 28.4rem;
+  }
+}
+.card__img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+.card__txt-col {
+  box-sizing: border-box;
+  padding: 3rem;
+}
+.card__author-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.card__author-avatar {
+  display: block;
+  width: 4rem;
+}
+.card__author-col {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.card__share {
+  display: block;
+  width: 4rem;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -26,16 +81,25 @@ html {
 }
 .page {
   background-color: #ccc;
+  box-sizing: border-box;
   margin-top: 2rem;
+}
+
+.bordered {
+  border: 0.1rem dotted black;
 }
 /* These breakpoints match with those of Bootstrap.*/
 .card-wrapper {
+  align-items: start;
+  box-sizing: border-box;
   background-image: url("../design/mobile-design.jpg");
   background-position: center top;
   background-repeat: no-repeat;
+  padding-top: 7.5rem;
 }
 @media screen and (min-width: 992px) {
   .card-wrapper {
     background-image: url("../design/desktop-design.jpg");
+    padding-top: 26rem;
   }
 }

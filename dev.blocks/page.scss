@@ -1,4 +1,9 @@
 .page {
     background-color: #ccc;
+    box-sizing: border-box;
     margin-top: 2rem;
+}
+
+.bordered {
+    border: 0.1rem dotted black;
 }

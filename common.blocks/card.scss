@@ -1,0 +1,67 @@
+@import "../library.blocks/breakpoints";
+
+.card {
+    border-radius: 1rem;
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.5;
+    overflow: hidden;
+    width: 33rem;
+
+    @media screen and (min-width: $large) {
+        flex-direction: row;
+        width: 73rem;
+    }
+
+    &__img-wrapper {
+        box-sizing: border-box;
+        height: 20rem;
+        overflow: hidden;
+        width: 33rem;
+
+        @media screen and (min-width: $large) {
+            height: 28rem;
+            width: 28.4rem;
+        }
+    }
+
+    &__img {
+        display: block;
+        height: auto;
+        width: 100%
+    }
+
+    &__txt-col {
+        box-sizing: border-box;
+        padding: 3rem;
+    }
+
+    &__author-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    &__author-avatar {
+        display: block;
+        width: 4rem;
+    }
+
+    &__author-col {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__author-name {}
+
+    &__date {}
+
+    &__share {
+        display: block;
+        width: 4rem;
+    }
+
+}
