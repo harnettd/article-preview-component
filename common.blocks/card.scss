@@ -6,10 +6,11 @@
     background-color: white;
     display: flex;
     flex-direction: column;
+    width: 33rem;
+
     margin-top: 0;
     margin-left: 0;
     opacity: 0.7;
-    width: 33rem;
 
     @media screen and (min-width: $large) {
         flex-direction: row;
@@ -33,7 +34,7 @@
     &__txt-col {
         padding: 3.5rem 3.5rem 2.1rem 3.3rem;
 
-        @media screen {
+        @media screen and (min-width: $large) {
             padding: 3.1rem 4rem 2.1rem 4.2rem;
         }
     }
@@ -57,7 +58,6 @@
         margin: 0 0 3.2rem;
 
         @media screen and (min-width: $large) {
-            @include font(1.2rem, $medium-weight);
             letter-spacing: 0.056rem;
             line-height: 1.67;
             margin: 0 0 1.9rem;
@@ -83,9 +83,7 @@
         width: 4rem;
 
         @media screen and (min-width: $large) {
-            height: 4rem;
             margin-right: -14.6rem;
-            width: 4rem; 
         }
     }
 
@@ -105,21 +103,11 @@
     &__author-name {
         @include font(1.25rem, $bold-weight);
         letter-spacing: 0.03rem;
-
-        @media screen and (min-width: $large) {
-            @include font(1.25rem, $bold-weight);
-            letter-spacing: 0.03rem; 
-        }
     }
 
     &__date {
         @include font(1.25rem, $medium-weight);
         letter-spacing: 0.03rem;
-
-        @media screen and (min-width: $large) {
-            @include font(1.25rem, $medium-weight);
-            letter-spacing: 0.03rem;            
-        }
     }
 
     &__share-wrapper {
@@ -130,21 +118,12 @@
         height: 3rem;
         justify-content: center;
         width: 3rem;
-
-        @media screen and (min-width: $large) {
-            height: 3rem;
-            width: 3rem;
-        }
     }
 
     &__share {
         display: block;
         height: auto;
         width: 1.35rem;
-
-        @media screen and (min-width: $large) {
-            width: 1.35rem;
-        }
     }
 
 }

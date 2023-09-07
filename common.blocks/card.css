@@ -4,10 +4,10 @@
   background-color: white;
   display: flex;
   flex-direction: column;
+  width: 33rem;
   margin-top: 0;
   margin-left: 0;
   opacity: 0.7;
-  width: 33rem;
 }
 @media screen and (min-width: 992px) {
   .card {
@@ -32,7 +32,7 @@
 .card__txt-col {
   padding: 3.5rem 3.5rem 2.1rem 3.3rem;
 }
-@media screen {
+@media screen and (min-width: 992px) {
   .card__txt-col {
     padding: 3.1rem 4rem 2.1rem 4.2rem;
   }
@@ -63,9 +63,6 @@
 }
 @media screen and (min-width: 992px) {
   .card__copy {
-    font-family: "Manrope", sans-serif;
-    font-size: 1.2rem;
-    font-weight: 500;
     letter-spacing: 0.056rem;
     line-height: 1.67;
     margin: 0 0 1.9rem;
@@ -90,9 +87,7 @@
 }
 @media screen and (min-width: 992px) {
   .card__author-avatar-wrapper {
-    height: 4rem;
     margin-right: -14.6rem;
-    width: 4rem;
   }
 }
 .card__author-avatar {
@@ -112,27 +107,11 @@
   font-weight: 700;
   letter-spacing: 0.03rem;
 }
-@media screen and (min-width: 992px) {
-  .card__author-name {
-    font-family: "Manrope", sans-serif;
-    font-size: 1.25rem;
-    font-weight: 700;
-    letter-spacing: 0.03rem;
-  }
-}
 .card__date {
   font-family: "Manrope", sans-serif;
   font-size: 1.25rem;
   font-weight: 500;
   letter-spacing: 0.03rem;
-}
-@media screen and (min-width: 992px) {
-  .card__date {
-    font-family: "Manrope", sans-serif;
-    font-size: 1.25rem;
-    font-weight: 500;
-    letter-spacing: 0.03rem;
-  }
 }
 .card__share-wrapper {
   align-items: center;
@@ -143,19 +122,8 @@
   justify-content: center;
   width: 3rem;
 }
-@media screen and (min-width: 992px) {
-  .card__share-wrapper {
-    height: 3rem;
-    width: 3rem;
-  }
-}
 .card__share {
   display: block;
   height: auto;
   width: 1.35rem;
-}
-@media screen and (min-width: 992px) {
-  .card__share {
-    width: 1.35rem;
-  }
 }
