@@ -1,13 +1,11 @@
 /* These breakpoints match with those of Bootstrap.*/
 .card {
   border-radius: 1rem;
-  box-sizing: border-box;
   background-color: white;
   display: flex;
   flex-direction: column;
-  margin-left: 50rem;
-  opacity: 0.5;
-  overflow: hidden;
+  margin-left: 0;
+  opacity: 0.75;
   width: 33rem;
 }
 @media screen and (min-width: 992px) {
@@ -17,9 +15,7 @@
   }
 }
 .card__img-wrapper {
-  box-sizing: border-box;
   height: 20rem;
-  overflow: hidden;
   width: 33rem;
 }
 @media screen and (min-width: 992px) {
@@ -36,7 +32,6 @@
   width: 100%;
 }
 .card__txt-col {
-  box-sizing: border-box;
   padding: 3.5rem 3.5rem 2.1rem 3.3rem;
 }
 .card__headline {
@@ -79,7 +74,6 @@
 .card__author-col {
   display: flex;
   flex-direction: column;
-  justify-content: start;
 }
 .card__author-name {
   font-family: "Manrope", sans-serif;
@@ -101,7 +95,6 @@
   display: flex;
   height: 3rem;
   justify-content: center;
-  overflow: hidden;
   width: 3rem;
 }
 .card__share {

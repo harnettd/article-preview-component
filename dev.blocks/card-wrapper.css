@@ -1,7 +1,6 @@
 /* These breakpoints match with those of Bootstrap.*/
 .card-wrapper {
   align-items: start;
-  box-sizing: border-box;
   background-image: url("../design/mobile-design.jpg");
   background-position: center top;
   background-repeat: no-repeat;
