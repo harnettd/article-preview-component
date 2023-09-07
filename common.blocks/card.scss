@@ -6,8 +6,9 @@
     background-color: white;
     display: flex;
     flex-direction: column;
+    margin-top: 0;
     margin-left: 0;
-    opacity: 0.75;
+    opacity: 0.7;
     width: 33rem;
 
     @media screen and (min-width: $large) {
@@ -15,32 +16,38 @@
         width: 73rem;
     }
 
-    &__img-wrapper {
+    &__img {
+        display: block;
         height: 20rem;
-        width: 33rem;
+        object-fit: cover;
+        object-position: 50% 26%;
+        width: 100%;
 
         @media screen and (min-width: $large) {
             height: 28rem;
+            object-position: left 26%;
             width: 28.4rem;
         }
     }
 
-    &__img {
-        display: block;
-        height: 100%;
-        object-fit: cover;
-        object-position: 50% 26%;
-        width: 100%;
-    }
-
     &__txt-col {
         padding: 3.5rem 3.5rem 2.1rem 3.3rem;
+
+        @media screen {
+            padding: 3.1rem 4rem 2.1rem 4.2rem;
+        }
     }
 
     &__headline {
         @include font(1.64rem, $bold-weight);
         line-height: 1.48;
         margin: 0 0 1.3rem;
+
+        @media screen and (min-width: $large) {
+            @include font(2.05rem, $bold-weight);
+            line-height: 1.4;
+            margin: 0 0 1.2rem;
+        }
     }
 
     &__copy {
@@ -48,6 +55,13 @@
         letter-spacing: 0.062rem;
         line-height: 1.65;
         margin: 0 0 3.2rem;
+
+        @media screen and (min-width: $large) {
+            @include font(1.2rem, $medium-weight);
+            letter-spacing: 0.056rem;
+            line-height: 1.67;
+            margin: 0 0 1.9rem;
+        }
     }
 
     &__author-row {
@@ -67,6 +81,12 @@
         margin-right: -4.4rem;
         overflow: hidden;
         width: 4rem;
+
+        @media screen and (min-width: $large) {
+            height: 4rem;
+            margin-right: -14.6rem;
+            width: 4rem; 
+        }
     }
 
     &__author-avatar {
@@ -78,17 +98,28 @@
     &__author-col {
         display: flex;
         flex-direction: column;
+        gap: 0.6rem;
+        justify-content: center;
     }
 
     &__author-name {
         @include font(1.25rem, $bold-weight);
         letter-spacing: 0.03rem;
-        margin-bottom: 0.03rem;
+
+        @media screen and (min-width: $large) {
+            @include font(1.25rem, $bold-weight);
+            letter-spacing: 0.03rem; 
+        }
     }
 
     &__date {
         @include font(1.25rem, $medium-weight);
         letter-spacing: 0.03rem;
+
+        @media screen and (min-width: $large) {
+            @include font(1.25rem, $medium-weight);
+            letter-spacing: 0.03rem;            
+        }
     }
 
     &__share-wrapper {
@@ -99,12 +130,21 @@
         height: 3rem;
         justify-content: center;
         width: 3rem;
+
+        @media screen and (min-width: $large) {
+            height: 3rem;
+            width: 3rem;
+        }
     }
 
     &__share {
         display: block;
         height: auto;
         width: 1.35rem;
+
+        @media screen and (min-width: $large) {
+            width: 1.35rem;
+        }
     }
 
 }
