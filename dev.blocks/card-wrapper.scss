@@ -2,13 +2,13 @@
 
 .card-wrapper {
     align-items: start;
-    background-image: url("../design/mobile-design.jpg");
+    // background-image: url("../design/mobile-design.jpg");
     background-position: center top;
     background-repeat: no-repeat;
     padding-top: 7.4rem;
 
     @media screen and (min-width: $large) {
-        background-image: url("../design/desktop-design.jpg");
+        // background-image: url("../design/desktop-design.jpg");
         padding-top: 26rem;
     }
 }

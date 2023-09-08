@@ -14,17 +14,20 @@ html {
 .attribution {
     text-align: center;
 }
-
+.page {
+  background-color: hsl(210, 46%, 95%);
+}
 /* These breakpoints match with those of Bootstrap.*/
 .card {
   border-radius: 1rem;
   background-color: white;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   width: 33rem;
   margin-top: 0;
   margin-left: 0;
-  opacity: 0.7;
+  opacity: 1;
 }
 @media screen and (min-width: 992px) {
   .card {
@@ -58,6 +61,7 @@ html {
   font-family: "Manrope", sans-serif;
   font-size: 1.64rem;
   font-weight: 700;
+  color: hsl(217, 19%, 35%);
   line-height: 1.48;
   margin: 0 0 1.3rem;
 }
@@ -74,6 +78,7 @@ html {
   font-family: "Manrope", sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
+  color: hsl(214, 17%, 51%);
   letter-spacing: 0.062rem;
   line-height: 1.65;
   margin: 0 0 3.2rem;
@@ -122,17 +127,19 @@ html {
   font-family: "Manrope", sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
+  color: hsl(217, 19%, 35%);
   letter-spacing: 0.03rem;
 }
 .card__date {
   font-family: "Manrope", sans-serif;
   font-size: 1.25rem;
   font-weight: 500;
+  color: hsl(212, 23%, 69%);
   letter-spacing: 0.03rem;
 }
 .card__share-wrapper {
   align-items: center;
-  background-color: #ccc;
+  background-color: hsl(210, 46%, 95%);
   border-radius: 50%;
   display: flex;
   height: 3rem;
@@ -153,24 +160,17 @@ html {
   color: hsl(228, 45%, 44%);
 }
 .page {
-  background-color: #ccc;
   margin-top: 2rem;
-}
-
-.bordered {
-  border: 0.1rem dotted black;
 }
 /* These breakpoints match with those of Bootstrap.*/
 .card-wrapper {
   align-items: start;
-  background-image: url("../design/mobile-design.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   padding-top: 7.4rem;
 }
 @media screen and (min-width: 992px) {
   .card-wrapper {
-    background-image: url("../design/desktop-design.jpg");
     padding-top: 26rem;
   }
 }

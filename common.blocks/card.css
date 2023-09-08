@@ -4,10 +4,11 @@
   background-color: white;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   width: 33rem;
   margin-top: 0;
   margin-left: 0;
-  opacity: 0.7;
+  opacity: 1;
 }
 @media screen and (min-width: 992px) {
   .card {
@@ -41,6 +42,7 @@
   font-family: "Manrope", sans-serif;
   font-size: 1.64rem;
   font-weight: 700;
+  color: hsl(217, 19%, 35%);
   line-height: 1.48;
   margin: 0 0 1.3rem;
 }
@@ -57,6 +59,7 @@
   font-family: "Manrope", sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
+  color: hsl(214, 17%, 51%);
   letter-spacing: 0.062rem;
   line-height: 1.65;
   margin: 0 0 3.2rem;
@@ -105,17 +108,19 @@
   font-family: "Manrope", sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
+  color: hsl(217, 19%, 35%);
   letter-spacing: 0.03rem;
 }
 .card__date {
   font-family: "Manrope", sans-serif;
   font-size: 1.25rem;
   font-weight: 500;
+  color: hsl(212, 23%, 69%);
   letter-spacing: 0.03rem;
 }
 .card__share-wrapper {
   align-items: center;
-  background-color: #ccc;
+  background-color: hsl(210, 46%, 95%);
   border-radius: 50%;
   display: flex;
   height: 3rem;
